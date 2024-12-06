@@ -112,29 +112,37 @@ sMAFの具体的なメカニズムや機能はまだ完全には解明されて�
   <p>
   <div><strong> &emsp;Random Posts:</strong></div>
 <div class=randomArticels><ul>
-<li><a href="../../Note/2022-2-23.html">記憶-私の日本での高校生活</a></li>
-<li><a href="../../Note/2022-1-14.html">記憶-京都の雪</a></li>
-<li><a href="../../StoryB/2021-2-22.html">和同学们在宿舍煮了火锅</a></li>
-<li><a href="../../StoryB/2021-7-19.html">圣地巡礼 《轻音少女》-丰乡小学旧校舍</a></li>
+<li><a href="../../StoryA/2022-6-5.html">留学生歓迎イベント〜布引の滝ハイキング〜</a></li>
+<li><a href="../../StoryA/2022-2-22.html">京都两洋高等学校 毕业典礼</a></li>
+<li><a href="../../StoryA/2021-10-14.html">体育祭</a></li>
 </ul></div>
   <div class=contact>Email: wangsychn@outlook.com<br>QQ: 3430320366 (飞蛙) WeChat: wangsychn<br>Github: @wangsychn</div>
   <hr>
-  <!-- Giscus 评论模块 -->
-  <script src="https://giscus.app/client.js"
-          data-repo="wangsychn/wangsychn.github.io"
-          data-repo-id="R_kgDOJxQ86Q"
-          data-category="Announcements"
-          data-category-id="DIC_kwDOJxQ86c4CXbQv"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="light"
-          data-lang="ja"
-          crossorigin="anonymous"
-          async>
+  
+  <!-- 检测是否为IE浏览器 -->
+  <script>
+    var isIE = /*@cc_on!@*/false || !!document.documentMode; // 检测IE浏览器
+    if (!isIE) {
+      // 如果不是IE浏览器，加载Giscus评论模块
+      var script = document.createElement('script');
+      script.src = "https://giscus.app/client.js";
+      script.setAttribute("data-repo", "wangsychn/wangsychn.github.io");
+      script.setAttribute("data-repo-id", "R_kgDOJxQ86Q");
+      script.setAttribute("data-category", "Announcements");
+      script.setAttribute("data-category-id", "DIC_kwDOJxQ86c4CXbQv");
+      script.setAttribute("data-mapping", "pathname");
+      script.setAttribute("data-strict", "0");
+      script.setAttribute("data-reactions-enabled", "1");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "top");
+      script.setAttribute("data-theme", "light");
+      script.setAttribute("data-lang", "ja");
+      script.setAttribute("crossorigin", "anonymous");
+      script.async = true;
+      document.body.appendChild(script);
+    }
   </script>
+
   <!-- 底部版权信息 -->
   <p>
 <table id="copyright"><tr><td id="copyright">wangsychn</td><td id="copyright" style="text-align:right;">Powered by <a href="http://underwaySoft.com/works/wdtp/index.html" target="_blank">WDTP</a> </td></tr></table>

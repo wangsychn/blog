@@ -66,28 +66,37 @@ AJRの魅力の一つは、ポップミュージックの中にオーケスト�
   <div><strong> &emsp;Random Posts:</strong></div>
 <div class=randomArticels><ul>
 <li><a href="../StoryA/2022-6-5.html">留学生歓迎イベント〜布引の滝ハイキング〜</a></li>
-<li><a href="../Work&Share/Work/2023-7-17jp.html">ポスター発表「MΦから細胞休眠を誘発する要因の探索」</a></li>
-<li><a href="../Work&Share/Share/2024-11-29.html">[Share]雑誌会「Lung-resident alveolar macrophages regulate the timing of breast cancer metastasis」</a></li>
-<li><a href="../StoryB/2021-7-4.html">大家一起给严同学过生日</a></li>
+<li><a href="../StoryA/2022-2-22.html">京都两洋高等学校 毕业典礼</a></li>
+<li><a href="../StoryA/2021-10-11.html">去鸭川 拍摄文化祭视频</a></li>
+<li><a href="../StoryB/2022-2-1.html">体验了京都传统染色工艺</a></li>
 </ul></div>
   <div class=contact>Email: wangsychn@outlook.com<br>QQ: 3430320366 (飞蛙) WeChat: wangsychn<br>Github: @wangsychn</div>
   <hr>
-  <!-- Giscus 评论模块 -->
-  <script src="https://giscus.app/client.js"
-          data-repo="wangsychn/wangsychn.github.io"
-          data-repo-id="R_kgDOJxQ86Q"
-          data-category="Announcements"
-          data-category-id="DIC_kwDOJxQ86c4CXbQv"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="light"
-          data-lang="ja"
-          crossorigin="anonymous"
-          async>
+  
+  <!-- 检测是否为IE浏览器 -->
+  <script>
+    var isIE = /*@cc_on!@*/false || !!document.documentMode; // 检测IE浏览器
+    if (!isIE) {
+      // 如果不是IE浏览器，加载Giscus评论模块
+      var script = document.createElement('script');
+      script.src = "https://giscus.app/client.js";
+      script.setAttribute("data-repo", "wangsychn/wangsychn.github.io");
+      script.setAttribute("data-repo-id", "R_kgDOJxQ86Q");
+      script.setAttribute("data-category", "Announcements");
+      script.setAttribute("data-category-id", "DIC_kwDOJxQ86c4CXbQv");
+      script.setAttribute("data-mapping", "pathname");
+      script.setAttribute("data-strict", "0");
+      script.setAttribute("data-reactions-enabled", "1");
+      script.setAttribute("data-emit-metadata", "0");
+      script.setAttribute("data-input-position", "top");
+      script.setAttribute("data-theme", "light");
+      script.setAttribute("data-lang", "ja");
+      script.setAttribute("crossorigin", "anonymous");
+      script.async = true;
+      document.body.appendChild(script);
+    }
   </script>
+
   <!-- 底部版权信息 -->
   <p>
 <table id="copyright"><tr><td id="copyright">wangsychn</td><td id="copyright" style="text-align:right;">Powered by <a href="http://underwaySoft.com/works/wdtp/index.html" target="_blank">WDTP</a> </td></tr></table>
