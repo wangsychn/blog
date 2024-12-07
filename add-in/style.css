@@ -11,7 +11,7 @@ p {
     margin-bottom: 15px;
     background-color: #e1eaea;
     text-shadow: 0 1px 1px #f0f0f0;
-    font-family: 'Helvetica', 'Lucida Grande', 'Microsoft YaHei', 'Hiragino Sans GB', 'sans-serif';
+    font-family: sans-serif;  /* 设置所有文本使用无衬线字体 */
     text-indent: 2em;
     line-height: 2.0;
 }
@@ -85,20 +85,20 @@ blockquote {
     background-color: #c5dadb;
     padding: 10px 15px 10px 15px;
     margin: 0 0 20px 0;
-    font-family: 'Consolas', 'KaiTi';
+    font-family: sans-serif;  /* 使用无衬线字体 */
     border-radius: 5px;
 }
 
 pre {
     text-indent: 0;
     text-shadow: 0 0 0 #000;
-    font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+    font-family: sans-serif;  /* 使用无衬线字体 */
     line-height: 1.5;
 }
 
 code {
     background-color: #9cc7ca;
-    font-family: 'Consolas', 'Monaco', 'Lucida Console', monospace;
+    font-family: sans-serif;  /* 使用无衬线字体 */
     font-size: 85%;
     border-radius: 2px;
 }
@@ -290,7 +290,7 @@ table {
     font-size: 92%;
     line-height: 1.5;
     text-align: center;
-    color: #05049D;  /* 修改为 05049D */
+    color: #000000;  /* 修改为 05049D */
 }
 
 .listDate a {
@@ -346,48 +346,5 @@ table {
 }
 
 .contact a {
-    font-size: 90%;
     color: #068794;  /* 修改为 068794 */
-    border-bottom: none;
-}
-
-.contact a:hover {
-    color: #068794; /* 修改为 068794 */
-    outline: 0;
-}
-
-.contact:hover {
-    color: #068794; /* 修改为 068794 */
-}
-
-.randomArticels a,
-.toc a {
-    font-size: 90%;
-    text-decoration: none;
-    color: #000000; /* 修改为 05049D */
-}
-
-.randomArticels a:hover {
-    color: #000DFF;  /* 修改为 000DFF */
-    outline: 0;
-}
-
-.toc a:hover {
-    color: #000DFF;  /* 修改为 000DFF */
-}
-
-.toc {
-    background: #f5f5f5;
-    padding: 15px;
-    margin: 30px 0;
-    border-radius: 10px;
-}
-
-.noScript {
-    background-color: #1f1f1f;
-    text-align: center;
-    color: #E2E2E2;
-    font-family: 'Consolas', 'Lucida Console', monospace;
-    font-size: 120%;
-    line-height: 2.0;
 }
