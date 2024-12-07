@@ -364,7 +364,7 @@ table {
 .toc a {
     font-size: 90%;
     text-decoration: none;
-    color: #000000; /* 修改为 05049D */
+    color: #05049D; /* 修改为 05049D */
 }
 
 .randomArticels a:hover {
