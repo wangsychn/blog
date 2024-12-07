@@ -348,3 +348,55 @@ table {
 .contact a {
     color: #068794;  /* 修改为 068794 */
 }
+
+/* 页数指示器与 ReadMore 按钮 */
+.page_navi {
+    width: 100%;
+    font-size: 85%;
+    height: 40px;
+    line-height: 30px; 
+    text-indent: 0;
+    overflow: hidden;
+    padding-right: 0;
+}
+
+.page_navi a,
+.readMore a {
+    padding: 6px 8px;
+    margin: 1px;
+    text-decoration: none;
+    color: #000000; /* 链接文字颜色，黑色 */
+    border: 1px solid #ACB2BE; /* 边框颜色，灰蓝色 */
+}
+
+.page_navi a:hover,
+.page_navi a.current,
+.readMore a:hover {
+    border: 1px solid #000DFF; /* 悬停时的边框颜色，蓝色 */
+    color: #000DFF; /* 悬停时的文字颜色，蓝色 */
+}
+
+.readMore {
+    font-size: 90%;
+}
+
+/* 菜单背景 */
+.siteMenu ul li:hover {
+    background: #C5CFED; /* 菜单背景颜色，浅蓝紫色 */
+    cursor: pointer;
+}
+
+.siteMenu ul li:hover ul li {
+    background: #C5CFED; /* 菜单背景颜色，浅蓝紫色 */
+    cursor: pointer;
+}
+
+.keywordsMenu ul li:hover {
+    background: #C5CFED; /* 菜单背景颜色，浅蓝紫色 */
+    cursor: pointer;
+}
+
+.keywordsMenu ul li:hover ul li {
+    background: #C5CFED; /* 菜单背景颜色，浅蓝紫色 */
+    cursor: pointer;
+}
