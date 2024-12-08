@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="WDTP by UnderwaySoft">
+  <meta name="Author" content="wangsychn">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="Description of this doc...">
+  <link rel="stylesheet" type="text/css" href="add-in/style.css"/>
+  <title>Gallery - wangsychn-blog</title>
+ </head>
+
+ <body>
+  <div class="siteLogo">
+    <a href="index.html">
+    <img src="add-in/logo.png" title="wangsychn-blog" width=165 /></a>
+  </div>
+  <div class="siteMenu"><ul>
+<li><a href="Home/index.html">Home</a>
+<li><a href="Work&Share/index.html">Work&Share</a>
+<ul>
+<li><a href="Work&Share/Work/index.html">Work</a></li>
+<li><a href="Work&Share/Share/index.html">Share</a></li>
+</ul>
+<li><a href="StoryA/index.html">StoryA</a>
+<li><a href="StoryB/index.html">StoryB</a>
+<li><a href="Note/index.html">Note</a>
+<li><a href="Gallery.html">Gallery</a>
+<li><a href="MEjp.html">About</a>
+<li><a href="Link.html">Link</a>
+</ul></div>
+  <hr>
+  <script>
+
+        var isIE = /MSIE|Trident/.test(window.navigator.userAgent);
+        if (isIE) {
+            document.documentElement.innerHTML = `
+                <div style="text-align: center; font-size: 20px; padding: 50px;">
+                    
+请使用更新的浏览器，感谢您的访问。</p>
+
+                    
+Please use an updated browser. Thank you for visiting.</p>
+
+                    
+更新されたブラウザを使用してください。ご訪問ありがとうございます。</p>
+
+                </div>
+
+            `;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="content"></div><p>
+    <script>
+
+        // 如果不是 IE 浏览器，加载Gallery/G.html的内容
+        if (!isIE) {
+            fetch('Gallery/G.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('网络问题，无法加载文件: ' + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('加载Gallery/G.html失败:', error);
+                    document.getElementById('content').innerHTML = <code>&lt;p>加载失败: ${error.message}&lt;/p></code>;
+                });
+        }
+    </script>
+<span id="wdtpPageBottom"></span>
+  <hr>
+  <div class=ad>
+<a href="https://wangsychn.github.io/MEjp.html" target="_blank"><img src="add-in/ad-2.jpg"></a>
+</div>
+  <div class=contact></div>
+
+  <hr>
+  <p>
+<table id="copyright"><tr><td id="copyright">Email: wangsychn@outlook.com<br>QQ: 3430320366 (飞蛙) WeChat: wangsychn<br>Github: @wangsychn</td><td id="copyright" style="text-align:right;">Powered by <a href="http://underwaySoft.com/works/wdtp/index.html" target="_blank">WDTP</a> </td></tr></table>
+ </body>
+</html>
